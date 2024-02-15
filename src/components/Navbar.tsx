@@ -18,7 +18,7 @@ const Navbar: FC<NavbarProps> = ({ }) => {
         <Link className='hidden md:flex justify-end ml-6 mt-2 ' href={'#Home'}>
             <Image
                 alt=''
-                src={'/net.png'}
+                src={'/Frame1.svg'}
                 height={100}
                 width={100}
             />
@@ -43,7 +43,7 @@ const Navbar: FC<NavbarProps> = ({ }) => {
                 <Button variant={'link'} className=''>Skills</Button>
             </Link>
             <Link href={'#Projects'}>
-                <Button variant={'link'} className=''>Arts</Button>
+                <Button variant={'link'} className=''>Projects</Button>
             </Link>
         </div>
     </div>

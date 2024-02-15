@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import SkillsVideo from './SkillsVideo'
 import { useSectionInView } from '@/lib/hooks'
 import { useActiveSectionContext } from '@/context/active-section-context'
+import Experience from './Experience'
 
 interface SkillExpProps {
 
@@ -18,8 +19,9 @@ const SkillExp: FC<SkillExpProps> = ({ }) => {
             ref={ref}
             id='Skills'
             className='scroll-mt-28 flex flex-col h-full w-full lg:flex-row gap-0 lg:gap-14'>
-            <SkillsVideo />
+            {/* <SkillsVideo /> */}
             <Skills />
+            <Experience/>
         </div>
     )
 }

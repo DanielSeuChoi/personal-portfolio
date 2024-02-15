@@ -52,6 +52,7 @@ const Intro = ({ }) => {
             </div>
             <div className='hidden lg:flex w-full justify-center mt-5'>
                 <Image
+                className=' rounded-xl'
                     src={'/profilepicup.jpg'}
                     alt='prof'
                     height={300}

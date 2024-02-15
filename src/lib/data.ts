@@ -1,3 +1,8 @@
+import ClimbX from "@/public/ClimbX.png";
+import iCBCM from "@/public/icbcm.png";
+import Apple from "@/public/appleblackbadge.svg"
+import Google from "@/public/GooglePlayBadge.png"
+
 export const links = [
     {
         name: "Intro",
@@ -23,6 +28,46 @@ export const links = [
         name: "Contact",
         hash: "#contact",
     },
+] as const;
+
+export const imageData = [
+    {
+        imageUrl:"ClimbX.png"
+    }
+] as const;
+
+export const mobileData=[
+    {
+            title: "iCBCM",
+            description:
+                `I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies Click On the photo to be linked to the site!.`,
+            tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+            imageUrl: iCBCM,
+            google: Google,
+            apple: Apple,
+            googleHash: "https://play.google.com/store/apps/details?id=org.cbcm.icbcmmaui&hl=en&gl=US",
+            hash:[Google,Apple],
+            appleHash:"https://apps.apple.com/jm/app/icbcm/id675355705",
+
+    }
+]
+
+export const projectsData = [
+    {
+        title: "Climb-X",
+        description:
+            `I worked as a full-stack developer on this startup project for 2 years. 
+            Users can give public feedback to companies Click On the photo to be linked to the site!.`,
+        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+        imageUrl: ClimbX,
+        google: ``,
+        apple: ``,
+        googleHash: null,
+        hash:[],
+        appleHash:"https://localhost:3000",
+    },
+
+
 ] as const;
 
 export const skillsData = [
@@ -77,3 +122,20 @@ export const endData = {
     Subsequently, I embarked on a coding bootcamp in the fall of 2022 and successfully completed it in the spring of 2023.`
 } as const;
 
+export const experienceData=[
+    {
+        title:`CSULB`,
+        description:'Bachelors of Art In Psychology',
+        date:'2018-2020'
+    },
+    {
+        title:`Coding Dojo`,
+        description:'Certification Full-Stack Software Developer',
+        date:'2022-2023'
+    },
+    {
+        title:'iCBCM',
+        description:'Internship Software Engineer | Mobile App Developer',
+        date:'2023-Present'
+    },
+]

@@ -20,23 +20,23 @@ const fadeInAnimationVariants = {
 export default function Skills() {
     return (
         <section
-            className='p-10 mb-28 max-w-[50rem] scroll-mt-28 text-center mt-28 '>
+            className='p-10 mb-28 max-w-[50rem] scroll-mt-28 text-center mt-28 mr-15 '>
             <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 whileInView={{}}
                 className=''
             >
-                <h1 className='text-5xl text-center justify-center flex mb-12 dark:text-light-gold' >
+                <h1 className='text-5xl text-center justify-center flex mb-12' >
                     My Skills
                 </h1>
             </motion.div>
             <ul className="flex flex-wrap justify-center
-            gap-2 text-sm text-gray-800">
+            gap-4 text-sm text-gray-800">
                 {skillsData.map((skills, index) => (
                     <motion.li
                         className='bg-white border border-black/[0.1]
-                    rounded-xl px-7 py-3 dark:bg-white/10 dark:text-white/80'
+                    rounded-xl px-7 py-3'
                         whileInView={"animate"}
                         variants={fadeInAnimationVariants}
                         viewport={{ once: true }}
