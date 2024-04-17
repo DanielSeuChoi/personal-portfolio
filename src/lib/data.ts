@@ -30,41 +30,30 @@ export const links = [
     },
 ] as const;
 
-export const imageData = [
-    {
-        imageUrl:"ClimbX.png"
-    }
-] as const;
 
 export const mobileData=[
     {
             title: "iCBCM",
             description:
-                `I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies Click On the photo to be linked to the site!.`,
-            tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+                `I worked as a full-stack developer on this application. This application is used by church administators as a directory. Admins can search for members through text or filter`,
+            tags: [".NET", ".NET-Maui", "Sqlite", "Xaml", "C#", "Azure"],
             imageUrl: iCBCM,
             google: Google,
             apple: Apple,
             googleHash: "https://play.google.com/store/apps/details?id=org.cbcm.icbcmmaui&hl=en&gl=US",
             hash:[Google,Apple],
             appleHash:"https://apps.apple.com/jm/app/icbcm/id675355705",
-
-    }
-]
+    },
+] as const;
 
 export const projectsData = [
     {
         title: "Climb-X",
         description:
-            `I worked as a full-stack developer on this startup project for 2 years. 
-            Users can give public feedback to companies Click On the photo to be linked to the site!.`,
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+            `A mock project created to replicate a company website for a local climbing gym. I worked to create an easy and accessible website with comfortable designs `,
+        tags: ["React", "Next.js", "Tailwind"],
         imageUrl: ClimbX,
-        google: ``,
-        apple: ``,
-        googleHash: null,
-        hash:[],
-        appleHash:"https://localhost:3000",
+        hash:"https://apps.apple.com/jm/app/icbcm/id675355705",
     },
 
 
@@ -72,9 +61,14 @@ export const projectsData = [
 
 export const skillsData = [
     `HTML`,
+    "XAML",
     "CSS",
     "JavaScript",
     "TypeScript",
+    "C#",
+    ".NET",
+    ".NET Maui",
+    "Azure",
     "React",
     "Next.js",
     "Node.js",
@@ -82,13 +76,11 @@ export const skillsData = [
     "Tailwind",
     "Prisma",
     "MongoDB",
-    "Redux",
-    "GraphQL",
-    "Apollo",
     "Express",
     "PostgreSQL",
+    "MySQL",
+    "Sqlite",
     "Python",
-    "Django",
     "Framer Motion",
 ] as const;
 
@@ -124,6 +116,11 @@ export const endData = {
 
 export const experienceData=[
     {
+        title:'Golden West College',
+        description:'Associates in Psychology',
+        date:'2014-2018'
+    },
+    {
         title:`CSULB`,
         description:'Bachelors of Art In Psychology',
         date:'2018-2020'
@@ -134,7 +131,7 @@ export const experienceData=[
         date:'2022-2023'
     },
     {
-        title:'iCBCM',
+        title:'CBCM',
         description:'Internship Software Engineer | Mobile App Developer',
         date:'2023-Present'
     },

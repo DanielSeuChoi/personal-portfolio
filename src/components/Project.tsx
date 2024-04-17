@@ -8,10 +8,7 @@ import { useSectionInView } from '@/lib/hooks'
 const Project = ({}) => {
   const { ref } = useSectionInView("Projects");
   return (
-      <div id='Projects' ref={ref}>
-          <header className=' text-7xl w-full text-start p-10 mx-auto'>
-            Projects
-          </header>
+      <div id='Projects' ref={ref} className="scroll-m-52" >
         <div className='flex flex-col lg:grid lg:grid-cols-2'>
           {projectsData.map((projects, index)=>(
               <div key={index}>

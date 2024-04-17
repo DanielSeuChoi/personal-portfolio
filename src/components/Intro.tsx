@@ -2,30 +2,73 @@
 import Image from 'next/image'
 import { aboutData, progressData, endData } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
+import {motion} from "framer-motion";
+
+const fadeInAnimationVariants = {
+    initial: {
+        opacity: 0,
+        y: 100,
+    },
+    animate: (index: number) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+            delay: 2 * index,
+        }
+    }),
+}
 
 const Intro = ({ }) => {
     const { ref } = useSectionInView("Intro");
     return (
-        <div
-            ref={ref}
-            id="Intro"
-            className='scroll-mt-24
-            h-full flex flex-col 
-            lg:flex-row p-0 lg:p-10 '>
+        <motion.div
+        initial="initial"
+        ref={ref}
+        id="Intro"
+        className='bg-slate-100 scroll-mt-24
+        h-full flex flex-col 
+        lg:flex-row p-0 lg:p-10 '>
             <div className='flex flex-col w-full h-full container mt-5 p-10 gap-5 '>
                 <header className='flex text-center justify-start text-4xl lg:text-5xl'>
                     How I started
                 </header>
-                <p className='text-start lg:text-start justify-evenly w-full '>
+                <motion.p
+                initial={{
+                    opacity: 0,
+                }}
+                whileInView={{
+                    opacity: 1,
+                }}
+                transition={{
+                    duration: 1,
+                }}
+                viewport={{
+                    once: true,
+                }}
+                className='text-start lg:text-start justify-evenly w-full '>
                     {aboutData.description}
-                </p>
+                </motion.p>
                 <br />
                 <header className='flex text-center justify-start text-4xl lg:text-5xl'>
                     My Progression
                 </header>
-                <p className='text-start lg:text-start justify-evenly w-full'>
+                <br />
+                <motion.p
+                initial={{
+                    opacity: 0,
+                }}
+                whileInView={{
+                    opacity: 1,
+                }}
+                transition={{
+                    duration: 1,
+                }}
+                viewport={{
+                    once: true,
+                }}
+                className='text-start lg:text-start justify-evenly w-full'>
                     {progressData.description}
-                </p>
+                </motion.p>
                 <br />
                 {/* <header className='flex text-center justify-start text-4xl lg:text-5xl'>
                     My End Goal
@@ -50,7 +93,7 @@ const Intro = ({ }) => {
                     </ul>
                 </div>
             </div>
-            <div className='hidden lg:flex w-full justify-center mt-5'>
+            <div className='hidden lg:flex  sm:w-2/4 sm:h-2/4 mt-20 w-full justify-center '>
                 <Image
                 className=' rounded-xl'
                     src={'/profilepicup.jpg'}
@@ -60,7 +103,7 @@ const Intro = ({ }) => {
                     quality={100}
                 />
             </div>
-        </div>
+        </motion.div>
     )
 }
 

@@ -20,7 +20,7 @@ const fadeInAnimationVariants = {
 export default function Skills() {
     return (
         <section
-            className='p-10 mb-28 max-w-[50rem] scroll-mt-28 text-center mt-28 mr-15 '>
+            className='p-10 max-w-[50rem] scroll-mt-28 text-center mt-28 mr-15 '>
             <motion.div
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}

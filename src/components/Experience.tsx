@@ -20,34 +20,40 @@ const fadeInAnimationVariants = {
 
 export default function Experience() {
     return (
-        <motion.div
-            className='mt-2 lg:mt-40 text-center justifty-center justify-items-center w-full '
-        
-        >
-            <header className='text-5xl text-center justify-center mb-5'>
-                Experience
-            </header>
-            {experienceData.map((exp, index) => (
-                <motion.ul
-                whileInView={"animate"}
-                variants={fadeInAnimationVariants}
-                viewport={{ once: true }}
-                initial="initial"
-                key={index}
-                custom={index}
-                className="">
-                    <li className='text-center lg:text-start text-3xl p-1'>
-                        {exp.title}
-                    </li>
-                    <li className='text-center lg:text-start p-1'>
-                        {exp.description}
-                    </li>
-                    <li className='text-center lg:text-start  p-1'>
-                        {exp.date}
-                    </li>
-                </motion.ul>
-            ))}
-            {/* <SkillsVideo /> */}
-        </motion.div>
+        <motion.section
+        whileInView={"animate"}
+        variants={fadeInAnimationVariants}
+        viewport={{ once: true }}
+        initial="initial"
+        className='p-10 max-w-[50rem] scroll-mt-28 text-center mt-4 lg:mt-28 mr-15'>
+            <motion.div
+                className=''
+            >
+                <header className='text-5xl text-center justify-center mb-5'>
+                    Experience
+                </header>
+                {experienceData.map((exp, index) => (
+                    <motion.ul
+                    whileInView={"animate"}
+                    variants={fadeInAnimationVariants}
+                    viewport={{ once: true }}
+                    initial="initial"
+                    key={index}
+                    custom={index}
+                    className="py-4">
+                        <li className='text-center lg:text-start text-3xl '>
+                            {exp.title}
+                        </li>
+                        <li className='text-center lg:text-start'>
+                            {exp.description}
+                        </li>
+                        <li className='text-center lg:text-start '>
+                            {exp.date}
+                        </li>
+                    </motion.ul>
+                ))}
+                {/* <SkillsVideo /> */}
+            </motion.div>
+    </ motion.section>
     )
 }

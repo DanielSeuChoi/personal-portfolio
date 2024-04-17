@@ -4,7 +4,10 @@ import Intro from "@/components/Intro";
 import Projects from "@/components/Projects";
 import SkillExp from "@/components/SkillExp";
 import Project from "@/components/Project";
-import Contact from "@/components/Contact";
+import AllProject from "@/components/Projects/AllProject";
+import Divider from "@/components/ui/Divider";
+import Links from "@/components/Links";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -14,8 +17,9 @@ export default function Home() {
       <HomePage />
       <Intro />
       <SkillExp />
-      <Project />
-      <Contact/>
+      <AllProject />
+      <Links/>
+      <Footer/>
     </main>
   );
 }
