@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { aboutData, progressData, endData } from '@/lib/data';
 import { useSectionInView } from '@/lib/hooks';
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 
 const fadeInAnimationVariants = {
     initial: {
@@ -22,10 +22,10 @@ const Intro = ({ }) => {
     const { ref } = useSectionInView("Intro");
     return (
         <motion.div
-        initial="initial"
-        ref={ref}
-        id="Intro"
-        className='bg-slate-100 mt-10 scroll-mt-24
+            initial="initial"
+            ref={ref}
+            id="Intro"
+            className='mt-10 scroll-mt-24
         h-full flex flex-col 
         lg:flex-row p-0 lg:p-10 container'>
             <div className='flex flex-col w-full h-full  mt-5 p-10 gap-5 '>
@@ -33,19 +33,19 @@ const Intro = ({ }) => {
                     How I started
                 </header>
                 <motion.p
-                initial={{
-                    opacity: 0,
-                }}
-                whileInView={{
-                    opacity: 1,
-                }}
-                transition={{
-                    duration: 1,
-                }}
-                viewport={{
-                    once: true,
-                }}
-                className='text-start lg:text-start justify-evenly w-full '>
+                    initial={{
+                        opacity: 0,
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                    }}
+                    transition={{
+                        duration: 1,
+                    }}
+                    viewport={{
+                        once: true,
+                    }}
+                    className='text-start lg:text-start justify-evenly w-full '>
                     {aboutData.description}
                 </motion.p>
                 <br />
@@ -54,19 +54,19 @@ const Intro = ({ }) => {
                 </header>
                 <br />
                 <motion.p
-                initial={{
-                    opacity: 0,
-                }}
-                whileInView={{
-                    opacity: 1,
-                }}
-                transition={{
-                    duration: 1,
-                }}
-                viewport={{
-                    once: true,
-                }}
-                className='text-start lg:text-start justify-evenly w-full'>
+                    initial={{
+                        opacity: 0,
+                    }}
+                    whileInView={{
+                        opacity: 1,
+                    }}
+                    transition={{
+                        duration: 1,
+                    }}
+                    viewport={{
+                        once: true,
+                    }}
+                    className='text-start lg:text-start justify-evenly w-full'>
                     {progressData.description}
                 </motion.p>
                 <br />
@@ -95,7 +95,7 @@ const Intro = ({ }) => {
             </div>
             <div className='hidden lg:flex  sm:w-2/4 sm:h-2/4 mt-20 w-full justify-center '>
                 <Image
-                className=' rounded-xl'
+                    className=' rounded-xl'
                     src={'/profilepicup.jpg'}
                     alt='prof'
                     height={300}
