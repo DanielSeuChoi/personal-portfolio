@@ -7,13 +7,13 @@ interface AllProjectProps {
 
 const AllProject: FC<AllProjectProps> = ({ }) => {
     return (
-        <div className=' bg-slate-100 container'>
+        <div className=' container'>
             <header className='text-7xl text-start p-10 mx-auto'>
-            Projects
+                Projects
             </header>
             <div className='flex flex-col lg:flex-row '>
-                <Project/>
-                <MobileProject/>
+                <Project />
+                <MobileProject />
             </div>
         </div>
     )
