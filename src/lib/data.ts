@@ -31,18 +31,18 @@ export const links = [
 ] as const;
 
 
-export const mobileData=[
+export const mobileData = [
     {
-            title: "iCBCM",
-            description:
-                `I worked as a full-stack developer on this application. This application is used by church administators as a directory. Admins can search for members through text or filter`,
-            tags: [".NET", ".NET-Maui", "Sqlite", "Xaml", "C#", "Azure"],
-            imageUrl: iCBCM,
-            google: Google,
-            apple: Apple,
-            googleHash: "https://play.google.com/store/apps/details?id=org.cbcm.icbcmmaui&hl=en&gl=US",
-            hash:[Google,Apple],
-            appleHash:"https://apps.apple.com/jm/app/icbcm/id675355705",
+        title: "iCBCM",
+        description:
+            `I worked as a full-stack developer on this application. This application is used by church administators as a directory. Admins can search for members through text or filter.`,
+        tags: [".NET", ".NET-Maui", "Sqlite", "Xaml", "C#", "Azure"],
+        imageUrl: iCBCM,
+        google: Google,
+        apple: Apple,
+        googleHash: "https://play.google.com/store/apps/details?id=org.cbcm.icbcmmaui&hl=en&gl=US",
+        hash: [Google, Apple],
+        appleHash: "https://apps.apple.com/jm/app/icbcm/id675355705",
     },
 ] as const;
 
@@ -53,7 +53,7 @@ export const projectsData = [
             `A mock project created to replicate a company website for a local climbing gym. I worked to create an easy and accessible website with comfortable designs `,
         tags: ["React", "Next.js", "Tailwind"],
         imageUrl: ClimbX,
-        hash:"https://apps.apple.com/jm/app/icbcm/id675355705",
+        hash: "not available",
     },
 
 
@@ -114,25 +114,25 @@ export const endData = {
     Subsequently, I embarked on a coding bootcamp in the fall of 2022 and successfully completed it in the spring of 2023.`
 } as const;
 
-export const experienceData=[
+export const experienceData = [
     {
-        title:'Golden West College',
-        description:'Associates in Psychology',
-        date:'2014-2018'
+        title: 'Golden West College',
+        description: 'Associates in Psychology',
+        date: '2014-2018'
     },
     {
-        title:`CSULB`,
-        description:'Bachelors of Art In Psychology',
-        date:'2018-2020'
+        title: `CSULB`,
+        description: 'Bachelors of Art In Psychology',
+        date: '2018-2020'
     },
     {
-        title:`Coding Dojo`,
-        description:'Certification Full-Stack Software Developer',
-        date:'2022-2023'
+        title: `Coding Dojo`,
+        description: 'Certification Full-Stack Software Developer',
+        date: '2022-2023'
     },
     {
-        title:'CBCM',
-        description:'Internship Software Engineer | Mobile App Developer',
-        date:'2023-Present'
+        title: 'CBCM',
+        description: 'Internship Software Engineer | Mobile App Developer',
+        date: '2023-Present'
     },
 ]
