@@ -7,11 +7,11 @@ interface AllProjectProps {
 
 const AllProject: FC<AllProjectProps> = ({ }) => {
     return (
-        <div className='p-10 bg-slate-100'>
-            <header className='text-7xl w-full text-start p-10 mx-auto'>
+        <div className=' bg-slate-100 container'>
+            <header className='text-7xl text-start p-10 mx-auto'>
             Projects
             </header>
-            <div className='flex flex-col lg:flex-row'>
+            <div className='flex flex-col lg:flex-row '>
                 <Project/>
                 <MobileProject/>
             </div>

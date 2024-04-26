@@ -45,9 +45,9 @@ const Navbar: FC<NavbarProps> = ({ }) => {
             <Link href={'#Projects'}>
                 <Button variant={'link'} className=''>Projects</Button>
             </Link>
-            {/* <Link href={'#Contact'}>
+            <Link href={'#Contact'}>
                 <Button variant={'link'} className=''>Contact</Button>
-            </Link> */}
+            </Link>
         </div>
     </div>
 }

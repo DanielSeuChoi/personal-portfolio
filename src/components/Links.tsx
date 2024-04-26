@@ -4,10 +4,14 @@ import Link from 'next/link'
 import Icons from './Icons'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
+import { useSectionInView } from '@/lib/hooks'
 
 const Links = ({ }) => {
+    const { ref } = useSectionInView("Contact");
     return (
         <motion.div 
+        id='Contact'
+        ref={ref}
         initial={{
             opacity: 0,
         }}

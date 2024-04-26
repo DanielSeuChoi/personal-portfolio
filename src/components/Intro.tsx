@@ -25,10 +25,10 @@ const Intro = ({ }) => {
         initial="initial"
         ref={ref}
         id="Intro"
-        className='bg-slate-100 scroll-mt-24
+        className='bg-slate-100 mt-10 scroll-mt-24
         h-full flex flex-col 
-        lg:flex-row p-0 lg:p-10 '>
-            <div className='flex flex-col w-full h-full container mt-5 p-10 gap-5 '>
+        lg:flex-row p-0 lg:p-10 container'>
+            <div className='flex flex-col w-full h-full  mt-5 p-10 gap-5 '>
                 <header className='flex text-center justify-start text-4xl lg:text-5xl'>
                     How I started
                 </header>
