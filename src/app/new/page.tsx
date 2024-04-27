@@ -1,4 +1,4 @@
-import ImageOverlay from "@/components/ImageOverlay"
+import ImageOverlay from "@/components/ui/ImageOverlay"
 
 const page = () => {
     return (

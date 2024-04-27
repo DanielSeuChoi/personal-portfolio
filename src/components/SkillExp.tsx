@@ -17,7 +17,6 @@ const SkillExp: FC<SkillExpProps> = ({ }) => {
             ref={ref}
             id='Skills'
             className='scroll-mt-28 m-24 flex flex-col h-full w-full lg:flex-row gap-0 lg:gap-14 container'>
-            {/* <SkillsVideo /> */}
             <Skills />
             <Experience />
         </div>

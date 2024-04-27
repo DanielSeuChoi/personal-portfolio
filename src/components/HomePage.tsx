@@ -1,6 +1,6 @@
 'use client'
 import { FC } from 'react'
-import ImageOverlay from './ImageOverlay'
+import ImageOverlay from './ui/ImageOverlay'
 import { useSectionInView } from '@/lib/hooks';
 
 interface HomePageProps {

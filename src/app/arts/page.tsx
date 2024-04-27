@@ -1,5 +1,5 @@
-import Icons from "@/components/Icons"
-import ImageOverlay from "@/components/ImageOverlay"
+import Icons from "@/components/ui/Icons"
+import ImageOverlay from "@/components/ui/ImageOverlay"
 import Button from "@/components/ui/Button"
 import { Link } from "lucide-react"
 
