@@ -1,9 +1,9 @@
 
 import HomePage from "@/components/HomePage";
 import Intro from "@/components/Intro";
-import Projects from "@/components/Projects";
+import Projects from "@/components/Projects/Projects";
 import SkillExp from "@/components/SkillExp";
-import Project from "@/components/Project";
+import Project from "@/components/Projects/Project";
 import AllProject from "@/components/Projects/AllProject";
 import Divider from "@/components/ui/Divider";
 import Links from "@/components/Links";
@@ -18,8 +18,8 @@ export default function Home() {
       <Intro />
       <SkillExp />
       <AllProject />
-      <Links/>
-      <Footer/>
+      <Links />
+      <Footer />
     </main>
   );
 }

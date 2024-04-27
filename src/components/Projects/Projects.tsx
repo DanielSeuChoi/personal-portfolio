@@ -3,7 +3,7 @@
 import { projectsData } from '@/lib/data'
 import Image from 'next/image'
 import Link from 'next/link';
-import Button from './ui/Button';
+import Button from '../ui/Button';
 
 type ProjectProps = (typeof projectsData)[number];
 

@@ -1,8 +1,6 @@
 'use client'
 import { FC } from 'react'
 import Skills from './Skills'
-import { motion } from 'framer-motion'
-import SkillsVideo from './SkillsVideo'
 import { useSectionInView } from '@/lib/hooks'
 import { useActiveSectionContext } from '@/context/active-section-context'
 import Experience from './Experience'
@@ -21,7 +19,7 @@ const SkillExp: FC<SkillExpProps> = ({ }) => {
             className='scroll-mt-28 m-24 flex flex-col h-full w-full lg:flex-row gap-0 lg:gap-14 container'>
             {/* <SkillsVideo /> */}
             <Skills />
-            <Experience/>
+            <Experience />
         </div>
     )
 }

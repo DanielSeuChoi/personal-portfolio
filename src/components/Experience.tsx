@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import SkillsVideo from './SkillsVideo'
 import { motion } from "framer-motion"
 import { experienceData } from '@/lib/data'
 
@@ -21,11 +20,11 @@ const fadeInAnimationVariants = {
 export default function Experience() {
     return (
         <motion.section
-        whileInView={"animate"}
-        variants={fadeInAnimationVariants}
-        viewport={{ once: true }}
-        initial="initial"
-        className='p-10 max-w-[50rem] scroll-mt-28 text-center mt-4 lg:mt-28 mr-15'>
+            whileInView={"animate"}
+            variants={fadeInAnimationVariants}
+            viewport={{ once: true }}
+            initial="initial"
+            className='p-10 max-w-[50rem] scroll-mt-28 text-center mt-4 lg:mt-28 mr-15'>
             <motion.div
                 className=''
             >
@@ -34,13 +33,13 @@ export default function Experience() {
                 </header>
                 {experienceData.map((exp, index) => (
                     <motion.ul
-                    whileInView={"animate"}
-                    variants={fadeInAnimationVariants}
-                    viewport={{ once: true }}
-                    initial="initial"
-                    key={index}
-                    custom={index}
-                    className="py-4">
+                        whileInView={"animate"}
+                        variants={fadeInAnimationVariants}
+                        viewport={{ once: true }}
+                        initial="initial"
+                        key={index}
+                        custom={index}
+                        className="py-4">
                         <li className='text-center lg:text-start text-3xl '>
                             {exp.title}
                         </li>
@@ -52,8 +51,7 @@ export default function Experience() {
                         </li>
                     </motion.ul>
                 ))}
-                {/* <SkillsVideo /> */}
             </motion.div>
-    </ motion.section>
+        </ motion.section>
     )
 }
