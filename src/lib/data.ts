@@ -81,7 +81,9 @@ export const skillsData = [
     "MySQL",
     "Sqlite",
     "Python",
+    "Flask",
     "Framer Motion",
+    "Figma"
 ] as const;
 
 export const mainSkillsData = [
